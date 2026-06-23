@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Partnerships and cooperative collaboration with Verneldos Global Services Ltd, including the Agro Trade Team Hub initiative."
+    />
+    <title>Partnerships | Verneldos Global Services Ltd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f5f9f5;
+        --surface: #ffffff;
+        --surface-2: #edf6ee;
+        --text: #12331a;
+        --muted: #5f7662;
+        --primary: #1f6f3d;
+        --primary-dark: #114a27;
+        --accent: #d19d2b;
+        --border: #dbe8dc;
+        --shadow: 0 24px 60px rgba(17, 74, 39, 0.12);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        color: var(--text);
+        background: linear-gradient(160deg, #f9fcf9 0%, var(--bg) 100%);
+        line-height: 1.7;
+      }
+      a { color: inherit; text-decoration: none; }
+      img { display:block; max-width:100%; }
+      .container { width: min(1160px, calc(100% - 2rem)); margin: 0 auto; }
+      .section { padding: 4.5rem 0; }
+      .section-title { font-family: "Playfair Display", serif; font-size: clamp(1.7rem, 3vw, 2.35rem); margin-bottom: 0.75rem; }
+      .section-intro { color: var(--muted); max-width: 760px; margin-bottom: 2rem; }
+      .btn {
+        display:inline-flex; align-items:center; justify-content:center; gap:0.45rem; border-radius:999px; padding:0.9rem 1.35rem; font-weight:700; transition:transform 0.25s ease;
+      }
+      .btn:hover { transform: translateY(-2px); }
+      .btn-primary { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color:#fff; box-shadow: 0 16px 30px rgba(31,111,61,0.25); }
+      .site-header { position: sticky; top:0; z-index:50; background: rgba(249,252,249,0.92); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(18,51,26,0.08); }
+      .nav-bar { display:flex; justify-content:space-between; align-items:center; padding:1rem 0; }
+      .brand { display:flex; gap:0.8rem; align-items:center; }
+      .brand-mark { width:56px; height:56px; border-radius:16px; object-fit:cover; border:1px solid var(--border); background:#fff; padding:2px; box-shadow:0 10px 24px rgba(17,74,39,0.12); }
+      .brand-text { font-weight:800; line-height:1.15; }
+      .brand-text span { display:block; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.14em; color:var(--muted); font-weight:700; }
+      .nav-links { display:flex; gap:1.1rem; align-items:center; }
+      .nav-links a { color:var(--muted); font-weight:600; }
+      .nav-links a:hover, .nav-links a.active { color:var(--primary); }
+      .menu-toggle { display:none; background:none; border:none; font-size:1.4rem; cursor:pointer; }
+      .info-list { padding-left:1rem; color:var(--muted); }
+      .info-list li { margin-bottom:0.55rem; }
+      .hero { padding: 4.5rem 0 2.5rem; }
+      .hero-grid { display:grid; gap:1.5rem; align-items:center; grid-template-columns: 1.1fr 0.9fr; }
+      .eyebrow { display:inline-flex; align-items:center; gap:0.45rem; padding:0.4rem 0.8rem; border-radius:999px; background: var(--surface-2); color:var(--primary); font-size:0.82rem; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; }
+      .hero h1 { font-family: "Playfair Display", serif; font-size: clamp(2.1rem, 4vw, 3.2rem); margin:1rem 0; line-height:1.15; }
+      .hero p { color: var(--muted); max-width: 660px; }
+      .hero-actions { display:flex; gap:1rem; flex-wrap:wrap; margin-top:1.4rem; }
+      .hero-visual { overflow:hidden; border-radius:30px; box-shadow: var(--shadow); }
+      .hero-visual img { width:100%; height:100%; min-height: 360px; object-fit:cover; }
+      .card, .info-card, .partner-card, .doc-card { background: var(--surface); border:1px solid var(--border); border-radius:24px; box-shadow: var(--shadow); }
+      .info-card { padding:1.5rem; }
+      .partner-grid { display:grid; gap:1.2rem; grid-template-columns: repeat(3, minmax(0,1fr)); }
+      .partner-card { padding:1.35rem; }
+      .partner-card h3 { margin:0.2rem 0 0.45rem; font-size:1.1rem; }
+      .partner-card p { margin:0; color:var(--muted); }
+      .pill-row { display:flex; flex-wrap:wrap; gap:0.6rem; margin-top:0.75rem; }
+      .pill-row span { display:inline-block; padding:0.45rem 0.7rem; border-radius:999px; background: var(--surface-2); color:var(--primary); font-size:0.82rem; font-weight:700; }
+      .docs-grid { display:grid; gap:1rem; grid-template-columns: repeat(3, minmax(0,1fr)); }
+      .doc-card { padding:1.35rem; }
+      .doc-card .tag { display:inline-block; font-size:0.74rem; text-transform:uppercase; letter-spacing:0.12em; color:var(--primary); font-weight:800; margin-bottom:0.55rem; }
+      .doc-card h3 { margin:0 0 0.4rem; font-size:1.1rem; }
+      .doc-card p { margin:0; color:var(--muted); }
+      .contact-panel { padding:1.6rem; display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap; border:1px solid var(--border); background: var(--surface); border-radius:24px; box-shadow: var(--shadow); }
+      footer { padding: 2rem 0 3rem; color:var(--muted); font-size:0.95rem; }
+      .footer-line { margin-top:0.8rem; border-top:1px solid var(--border); padding-top:0.8rem; }
+      .footer-brand { display:flex; align-items:center; gap:0.8rem; margin-bottom:0.75rem; }
+      .footer-brand img { width:56px; height:56px; border-radius:16px; object-fit:cover; border:1px solid var(--border); background:#fff; padding:2px; }
+      @media (max-width:900px) {
+        .hero-grid { grid-template-columns:1fr; }
+        .partner-grid, .docs-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+        .nav-links { display:none; }
+        .nav-links.open { display:flex; flex-direction:column; position:absolute; top:4.8rem; right:1rem; background:#fff; padding:1rem; border:1px solid var(--border); border-radius:16px; box-shadow: var(--shadow); }
+        .menu-toggle { display:block; }
+      }
+      @media (max-width:640px) {
+        .partner-grid, .docs-grid { grid-template-columns:1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav-bar" aria-label="Main navigation">
+          <a class="brand" href="index.html">
+            <img class="brand-mark" src="images/v1.jpeg" alt="Verneldos Global Services Ltd logo" />
+            <div class="brand-text">
+              Verneldos Global Services Ltd
+              <span>Partnerships & alliances</span>
+            </div>
+          </a>
+          <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a class="active" href="partnership.html">Partnerships</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#governance">Governance</a>
+            <a href="index.html#contact">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="eyebrow">Strategic partnerships</span>
+            <h1>Building alliances that connect communities, markets, and opportunity.</h1>
+            <p>
+              Verneldos Global Services Ltd works with cooperatives, business networks, and community institutions to expand market access and create practical solutions across agro-business, agency banking, and general trade.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="mailto:verneldosltd@gmail.com">Discuss a partnership</a>
+              <a class="btn btn-outline" href="index.html">View corporate profile</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img src="images/org.jpeg" alt="Partnership and collaborative business engagement" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">How we partner</h2>
+          <p class="section-intro">
+            The Agro Trade Team Hub is an initiative of Verneldos Global Services Ltd. It is positioned as a practical community-facing platform, while the core corporate identity remains Verneldos Global Services Ltd.
+          </p>
+          <div class="partner-grid">
+            <article class="partner-card">
+              <h3>Cooperative collaboration</h3>
+              <p>We work with cooperative societies and community groups to strengthen field-level engagement, trust, and local participation.</p>
+              <div class="pill-row"><span>Community groups</span><span>Cooperative societies</span></div>
+            </article>
+            <article class="partner-card">
+              <h3>Agro-trade linking</h3>
+              <p>We connect producers, distributors, and service providers through better logistics, market access, and operational coordination.</p>
+              <div class="pill-row"><span>Supply chains</span><span>Trade support</span></div>
+            </article>
+            <article class="partner-card">
+              <h3>Financial inclusion pathways</h3>
+              <p>Our agency-banking work supports financial access in underserved communities alongside broader commercial and agricultural activities.</p>
+              <div class="pill-row"><span>Agency banking</span><span>Financial access</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="info-card">
+            <h2 class="section-title">Partnering with Verneldos</h2>
+            <p class="section-intro">
+              Our partnership model is built around reliability, accountability, clear delivery, and shared value. We welcome engagements that improve livelihoods, support trade, and expand responsible business activity.
+            </p>
+            <ul class="info-list">
+              <li>Practical collaboration with farmer groups, cooperatives, and commercial stakeholders.</li>
+              <li>Transparent operational approach aligned with our CAC and corporate governance framework.</li>
+              <li>Focused support for agriculture, distribution, and financial-service enablement.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Statutory support for partnerships</h2>
+          <p class="section-intro">Every partnership is backed by our registered corporate structure and official statutory documents.</p>
+          <div class="docs-grid">
+            <article class="doc-card">
+              <div class="tag">Registration</div>
+              <h3>RC: 8772984</h3>
+              <p>Registered business identity under the Companies and Allied Matters Act 2020.</p>
+            </article>
+            <article class="doc-card">
+              <div class="tag">Authority</div>
+              <h3>CAC / Federal Republic of Nigeria</h3>
+              <p>Corporate affairs oversight and official statutory records are maintained in line with the law.</p>
+            </article>
+            <article class="doc-card">
+              <div class="tag">Address</div>
+              <h3>Registered office</h3>
+              <p>No. 1, Epono Extension, Nko Abanankpai, Cross River State, Nigeria.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="contact-panel">
+            <div>
+              <span class="eyebrow">Partner with us</span>
+              <h2 class="section-title" style="margin-top:0.8rem;">Let us explore a practical, values-driven collaboration.</h2>
+            </div>
+            <a class="btn btn-primary" href="mailto:verneldosltd@gmail.com">Start the conversation</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-brand">
+          <img src="images/v1.jpeg" alt="Verneldos Global Services Ltd logo" />
+          <div>
+            <strong>Verneldos Global Services Ltd</strong><br />
+            Partnerships & alliances
+          </div>
+        </div>
+        <div class="footer-line">
+          RC: 8772984 • No. 1, Epono Extension, Nko Abanankpai, Cross River State, Nigeria<br />
+          verneldosltd@gmail.com | +234 (0) 80 6934 1261, +234 (0) 80 6212 3810
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector('.menu-toggle');
+      const links = document.querySelector('.nav-links');
+      if (toggle && links) {
+        toggle.addEventListener('click', () => {
+          links.classList.toggle('open');
+        });
+      }
+    </script>
+  </body>
+</html>
