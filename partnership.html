@@ -81,9 +81,20 @@
       .doc-card p { margin:0; color:var(--muted); }
       .contact-panel { padding:1.6rem; display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap; border:1px solid var(--border); background: var(--surface); border-radius:24px; box-shadow: var(--shadow); }
       footer { padding: 2rem 0 3rem; color:var(--muted); font-size:0.95rem; }
+      .footer-grid { display:grid; gap:1.25rem; grid-template-columns: 1.2fr 0.8fr; align-items:start; }
       .footer-line { margin-top:0.8rem; border-top:1px solid var(--border); padding-top:0.8rem; }
       .footer-brand { display:flex; align-items:center; gap:0.8rem; margin-bottom:0.75rem; }
       .footer-brand img { width:56px; height:56px; border-radius:16px; object-fit:cover; border:1px solid var(--border); background:#fff; padding:2px; }
+      .footer-meta { color: var(--text); margin: 0.3rem 0 0.5rem; }
+      .footer-contact a { color: var(--primary-dark); font-weight: 600; }
+      .social-links { display:flex; flex-wrap:wrap; gap:0.7rem; margin-top:0.7rem; }
+      .social-btn {
+        display:inline-flex; align-items:center; justify-content:center;
+        width: 42px; height: 42px; border-radius: 999px; border: 1px solid var(--border);
+        background: var(--surface); color: var(--primary-dark); font-weight: 800; box-shadow: 0 8px 20px rgba(17,74,39,.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .social-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(17,74,39,.13); }
       @media (max-width:900px) {
         .hero-grid { grid-template-columns:1fr; }
         .partner-grid, .docs-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
@@ -220,11 +231,30 @@
 
     <footer>
       <div class="container">
-        <div class="footer-brand">
-          <img src="images/v1.jpeg" alt="Verneldos Global Services Ltd logo" />
+        <div class="footer-grid">
           <div>
-            <strong>Verneldos Global Services Ltd</strong><br />
-            Partnerships & alliances
+            <div class="footer-brand">
+              <img src="images/v1.jpeg" alt="Verneldos Global Services Ltd logo" />
+              <div>
+                <strong>Verneldos Global Services Ltd</strong><br />
+                Partnerships & alliances
+              </div>
+            </div>
+            <p class="footer-meta">THIS WEBSITE IS DESGNED, AND MANAGE BY NTONARCH ACUMEN NETWORK</p>
+            <div class="footer-contact">
+              <a href="https://www.ntonarch.com" target="_blank" rel="noopener noreferrer">www.ntonarch.com</a><br />
+              <a href="tel:+2348103562802">+2348103562802</a><br />
+              <a href="mailto:ntonarch@gmail.com">ntonarch@gmail.com</a>
+            </div>
+          </div>
+          <div>
+            <strong>Follow us</strong>
+            <div class="social-links">
+              <a class="social-btn" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+              <a class="social-btn" href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X">X</a>
+              <a class="social-btn" href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">T</a>
+              <a class="social-btn" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+            </div>
           </div>
         </div>
         <div class="footer-line">
